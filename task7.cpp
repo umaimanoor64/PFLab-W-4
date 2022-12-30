@@ -1,0 +1,41 @@
+
+#include<iostream>
+using namespace std;
+void totalamount(string day,int amount);
+
+
+
+main()
+{
+int amount;
+string day;
+while(true)
+{
+cout<<"enter day of shopping= ";
+cin>>day;
+totalamount(day,amount);
+}
+}
+
+void totalamount(string day,int amount)
+{
+
+if(day=="sunday")
+	{
+	int amount1, paisy;
+	cout<<"enter shpping amount= ";
+	cin>>paisy;
+	amount=(paisy*10)/100;
+	amount1=paisy-amount;
+	cout<<"payable amount is= "<<amount1<<endl;
+	}
+if(day!="sunday")
+	{
+	int amount1, paisy;
+	cout<<"enter shopping amount=";
+	cin>>paisy;
+	amount=(paisy*5)/100;
+	amount1=paisy-amount;
+	cout<<"payable amount is= "<<amount1<<endl;
+	}
+}
